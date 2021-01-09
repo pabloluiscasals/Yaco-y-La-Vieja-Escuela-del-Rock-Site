@@ -1,0 +1,272 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** Reset para REMS  - 62.5% es igual a 10 px de 16 px**/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "lato", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.fondo {
+    background: radial-gradient(circle, #fff, #838383);
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+.centrar-texto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/** Header **/
+
+.header {
+    background-image: url(/img/portada2a.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+
+/** Navegacion **/
+
+.barra-navegacion {
+    background-color: #000000;
+    position: sticky;
+    top: 0rem;
+    text-align: center;
+}
+
+.barra-navegacion a,
+.barra-navegacion p {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navegacion a {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .barra-navegacion {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        height: 6rem;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0rem;
+        align-items: center;
+    }
+    .navegacion {
+        display: flex;
+    }
+    .navegacion a {
+        padding: 0 1rem;
+    }
+}
+
+
+/** Biografia **/
+
+.foto-banda {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .biografia {
+        display: flex;
+    }
+    .biografia img {
+        padding-right: 5rem;
+    }
+}
+
+.biografia img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+    align-items: center;
+}
+
+
+/** Galeria **/
+
+@media (min-width: 768px) {
+    .galeria-home {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .galeria-home img {
+        height: 500px;
+        width: 500px;
+        object-fit: contain;
+    }
+}
+
+.galeria-home a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.galeria-home img {
+    height: 350px;
+    width: 350px;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.galeria {
+    display: block;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.galeria img:last-of-type {
+    padding-bottom: 5rem;
+}
+
+
+/** spotify **/
+
+.spotify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.spotify a {
+    color: #960505;
+    text-decoration: none;
+}
+
+
+/** Proximas Fechas **/
+
+@media (min-width: 768px) {
+    .proximas-fechas {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.proximas-fechas {}
+
+.back-fechas {
+    background-color: #afaeae;
+}
+
+.fechas a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/** Contacto **/
+
+form p {
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.form {
+    padding-bottom: 5rem;
+}
+
+
+/** Footer **/
+
+@media (min-width: 768px) {
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        background-color: black;
+    }
+    .copyright a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.copyright {
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #ffffff;
+}
